@@ -5,11 +5,13 @@
 </template>
 <script>
 export default{
-    name : 'BookList'
+    name: "BookList"
     data() {
      return { title: "All Books" }}
 
 </script
 <style>
-     h1, h2 {font-weight: normal}
+     h1, h2 {
+     font-weight: normal;
+            }
 </style>
