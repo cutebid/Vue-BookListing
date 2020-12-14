@@ -14,6 +14,9 @@
 
 export default{
     name: "BookList",
+     components: {
+          BookItem
+       },
     data: function() { 
           return { 
              title: "All Books" ,
@@ -22,10 +25,7 @@ export default{
     {title: 'American Gods', author: 'Neil Gaiman'},
     {title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
                     ]
-             },
-    components: {
-          BookItem
-       }
+             }
      }
 };
 </script>
