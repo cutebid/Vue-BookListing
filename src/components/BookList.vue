@@ -11,7 +11,7 @@
      </div>
 </template>
 <script>
-import BookItem from './BookItem' ;
+ import BookItem from './BookItem.vue';
 
 export default{
     name: "BookList",
@@ -25,7 +25,7 @@ export default{
                     ]
              },
     components: {
-          BookItem,
+          BookItem
        }
      }
 }
