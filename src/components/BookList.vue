@@ -2,8 +2,8 @@
      <div>
         <h1>{{title}}</h1>
         <ul>
-          v- for  <li> 
-               {{book.title}}:{{book.author}},
+          <li> 
+            v-for   {{book.title}}:{{book.author}},
                
            </li>
         </ul>
