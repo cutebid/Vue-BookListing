@@ -1,6 +1,12 @@
 <template>
      <div>
         <h1>{{title}}</h1>
+        <ul>
+          v- for  <li> 
+               {{book.title}}:{{book.author}},
+               
+           </li>
+        </ul>
      </div>
 </template>
 <script>
@@ -8,7 +14,12 @@ export default{
     name: "BookList",
     data: function() { 
           return { 
-             title: "All Books" 
+             title: "All Books" ,
+             books: [
+                     {title: 'Self-Reliance', author: 'Ralph Waldo Emerson'},
+    {title: 'American Gods', author: 'Neil Gaiman'},
+    {title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
+                    ]
              }
      }
 }
@@ -17,4 +28,12 @@ export default{
      h1, h2 {
      font-weight: normal;
             }
+     ul {
+          list-style-type: none;
+          padding: 0;
+        }
+     li {
+          display: block;
+          margin: 0 10px;
+     }
 </style>
