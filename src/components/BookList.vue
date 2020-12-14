@@ -1,12 +1,14 @@
 <template>
      <div>
         <h1>{{title}}</h1>
-        <book-form></book-form>
         <ul>
           <book-item
             v-for="book in books" :book = 'book'>
            </book-item>
         </ul>
+        <hr>
+        <book-form  @addBook='appendBook'></book-form>
+
      </div>
 </template>
 <script>
@@ -22,10 +24,10 @@ export default{
          
        },
     methods: {
-       appendBook: function(bookTitle, bookAuthor){ 
+       appendBook(bookTitle, bookAuthor){ 
           this.books.push({ title: bookTitle, author: bookAuthor })
-       }
-    },
+                                        }
+            },
     data: function() { 
           return { 
              title: "All Books" ,
