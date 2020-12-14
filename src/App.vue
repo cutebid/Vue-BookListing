@@ -6,7 +6,7 @@
 </template>
 
 <script>
-import BookList from './components/BookList' ;
+import BookItem from './BookItem.vue';
 
 export default {
   name: 'app',
