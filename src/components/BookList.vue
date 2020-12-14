@@ -23,11 +23,7 @@ export default{
           BookForm
          
        },
-    methods: {
-       appendBook(bookTitle, bookAuthor){ 
-          this.books.push({ title: bookTitle, author: bookAuthor })
-                                        }
-            },
+   
     data: function() { 
           return { 
              title: "All Books" ,
@@ -37,7 +33,12 @@ export default{
     {title: 'Amusing Ourselves to Death', author: 'Neil Postman'},
                     ]
              }
-     }
+     },
+      methods: {
+       appendBook(bookTitle, bookAuthor){ 
+          this.books.push({ title: bookTitle, author: bookAuthor })
+                                        }
+            },
 };
 </script>
 <style>
