@@ -9,7 +9,7 @@
      </div>
 </template>
 <script>
-import BookItem from './BookItem';
+import BookItem from './BookItem' ;
 
 export default{
     name: "BookList",
@@ -26,7 +26,7 @@ export default{
           BookItem,
        }
      }
-}
+};
 </script>
 <style>
      h1, h2 {
