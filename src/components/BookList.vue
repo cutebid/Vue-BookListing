@@ -6,8 +6,8 @@
 <script>
 export default{
     name: "BookList",
-    data: function(){ {
-     return { title: "All Books" }}}
+    function data(){ 
+     return { title: "All Books" }}
 
 </script>
 <style>
