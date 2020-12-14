@@ -9,6 +9,7 @@
      </div>
 </template>
 <script>
+
 import BookItem from './BookItem';
 
 export default{
