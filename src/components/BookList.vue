@@ -5,11 +5,11 @@
 </template>
 <script>
 export default{
-    name : BookList
-    data : function(){ 
-      title: "All Books" }
-      }
+    name : 'BookList'
+    data() {
+     return { title: "All Books" }}
+
 </script
 <style>
      h1, h2 {font-weight : normal}
-</style
+</style>
