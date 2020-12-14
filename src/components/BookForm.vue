@@ -13,13 +13,12 @@ export default {
            return {
                bookTitle: '',
                bookAuthor: ''
-           };
+           }},
         methods: {
-                bookSubmit: function(bookTitle, bookAuthor){
+                bookSubmit(bookTitle, bookAuthor) {
                     this.$emit('addBook', bookTitle, bookAuthor);
+                                                 }
                 }
-           }
-       }
 }
 </script>
 <style>
