@@ -3,15 +3,13 @@
         <h1>{{title}}</h1>
         <ul>
           <book-item> 
-            v-for="v-bind book"
-           {{book.title}}:{{book.author}},
-               
+            v-for="book in books" :book = 'book'
            </book-item>
         </ul>
      </div>
 </template>
 <script>
- import BookItem from './BookItem';
+import BookItem from './BookItem';
 
 export default{
     name: "BookList",
@@ -25,7 +23,7 @@ export default{
                     ]
              },
     components: {
-          BookItem
+          BookItem,
        }
      }
 }
